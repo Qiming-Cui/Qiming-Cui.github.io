@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qiming - Personal Page</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Load Remixicon for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for the abstract toggle - No longer needed, but leaving in case you add more papers */
+        .abstract-content {
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .abstract-toggle:checked + .abstract-content {
+            display: block;
+            max-height: 1000px; /* arbitrary large value */
+            transition: max-height 0.5s ease-in;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
 
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-5xl px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-900">
+                <a href="#">Qiming</a>
+            </div>
+            <div class="space-x-6 text-gray-600 font-medium">
+                <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                <a href="#publications" class="hover:text-blue-600 transition-colors">Publications</a>
+                <a href="#cv" class="hover:text-blue-600 transition-colors">CV</a>
+                <!-- <a href="#misc" class="hover:text-blue-600 transition-colors">Misc</a> -->
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto max-w-5xl px-6 py-12 md:py-16">
+
+        <!-- Hero Section -->
+        <section class="items-start md:items-center gap-8 md:gap-12">
+            <!-- Left Column (Info) -->
+            <div class="space-y-5">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Qiming Cui</h1>
+                <p class="text-lg md:text-xl text-gray-600">
+                    PhD candidate at Johns Hopkins University
+                </p>
+                <!-- <p class="text-gray-500">Johns Hopkins University</p> --> <!-- Removed as requested by correcting the title above -->
+                
+                <!-- Icon Links -->
+                <div class="flex space-x-4">
+                    <a href="mailto:qcui6@jhu.edu" aria-label="Email" class="text-gray-500 hover:text-blue-600 transition-colors">
+                        <i class="ri-mail-line text-2xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/qiming-cui-072389200/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-gray-500 hover:text-blue-600 transition-colors">
+                        <i class="ri-linkedin-box-fill text-2xl"></i>
+                    </a>
+                    <!-- Google Scholar link removed as requested -->
+                </div>
+            </div>
+            
+            <!-- Right Column (Image) - REMOVED as requested -->
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="mt-16 md:mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+            <div class="space-y-4 text-lg text-gray-700 leading-relaxed">
+                <p>
+                    Hello! I am a PhD candidate in the 
+                    <a href="https://engineering.jhu.edu/ams/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Applied Mathematics and Statistics Department</a> 
+                    at <a href="https://www.jhu.edu/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Johns Hopkins University</a>, 
+                    where I have the great honor of being advised by 
+                    <a href="https://www.cs.jhu.edu/~mdinitz/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">Michael Dinitz</a>. 
+                    My research mainly focuses on theoretical computer science. Specifically, I'm doing Approximation and Online algorithms with machine learned predictions.
+                    Before my PhD, I earned an MS in Mathematics from the 
+                    <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">University of Oxford</a> 
+                    and a BS in Mathematics from the 
+                    <a href="https://www.liverpool.ac.uk/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:text-blue-800 hover:underline">University of Liverpool</a>.
+                </p>
+                <p>
+                    I'm interested in using quantitative analysis to solve complex problems.
+                    Currently, I am seeking a summer internship in 2026.
+                </p>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="mt-16 md:mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Publications</h2>
+            
+            <div class="space-y-6">
+                <!-- Publication 1 -->
+                <article class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900">Controlling Tail Risk in Two-Slope Ski Rental</h3>
+                    <p class="text-gray-500 mt-1">
+                        <strong>Qiming Cui</strong>, Michael Dinitz
+                    </p>
+                    <p class="text-gray-600 mt-2 italic">
+                        Approximation and Online Algorithms (WAOA) 2025
+                    </p>
+                    <p class="text-gray-700 mt-2 font-medium">
+                        Invited to special issue of Acta Informatica.
+                    </p>
+                    
+                    <!-- Links -->
+                    <div class="mt-4 space-x-4">
+                        <a href="https://arxiv.org/abs/2508.06809" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">arXiv</a>
+                        <a href="https://dl.acm.org/doi/10.1007/978-3-032-06706-7_6" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">ACM</a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-032-06706-7_6" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">Springer</a>
+                        <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">PDF</a> -->
+                        <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">BibTeX</a> -->
+                        
+                        <!-- Abstract Toggle Removed -->
+                    </div>
+                    
+                    <!-- Abstract Content Removed -->
+                </article>
+                
+                <!-- Publication 2 (Commented out) -->
+                <!--
+                <article class="p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-gray-900">[Paper Title 2]</h3>
+                    <p class="text-gray-500 mt-1">
+                        Co-Author 1, <strong>Qiming</strong>, Co-Author 2
+                    </p>
+                    <p class="text-gray-600 mt-2 italic">
+                        [Conference or Journal Name] 2024
+                    </p>
+                    <div class="mt-4 space-x-4">
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">arXiv</a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" class="text-blue-600 font-medium hover:underline">PDF</a>
+                        
+                        <label for="abs2" class="text-blue-600 font-medium hover:underline cursor-pointer">Abstract</label>
+                    </div>
+                    
+                    <input type="checkbox" id="abs2" class="abstract-toggle hidden">
+                    <div class="abstract-content mt-4 pt-4 border-t border-gray-200">
+                        <p class="text-gray-700 leading-relaxed">
+                            [... Abstract for paper 2 ...]
+                        </p>
+                    </div>
+                </article>
+                -->
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="mt-16 md:mt-24">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">CV / Resume</h2>
+            <a href="Qiming_Cui_CV.pdf" target="_blank" rel="noopener noreferrer" class="inline-block px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow-md hover:bg-blue-700 transition-colors">
+                Download CV (PDF)
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="container mx-auto max-w-5xl px-6 py-10 mt-12 border-t border-gray-200">
+        <div class="text-center text-gray-500">
+            <p>&copy; 2025 Qiming Cui. All rights reserved.</p>
+            <p class="text-sm italic mt-2">This page is continuously updated.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
