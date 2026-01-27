@@ -49,7 +49,7 @@
     <main class="container mx-auto max-w-5xl px-6 py-12 md:py-16">
 
         <!-- Hero Section -->
-        <section class="items-start md:items-center gap-8 md:gap-12">
+        <section class="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12">
             <!-- Left Column (Info) -->
             <div class="space-y-5">
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Qiming Cui</h1>
@@ -70,7 +70,16 @@
                 </div>
             </div>
             
-            <!-- Right Column (Image) - REMOVED as requested -->
+            <!-- Right Column (Image) -->
+            <div class="mt-6 md:mt-0 md:ml-auto flex justify-center md:justify-end">
+                <img
+                    src="qiming.jpg"
+                    alt="Qiming Cui"
+                    class="w-40 h-40 md:w-48 md:h-48 rounded-2xl object-cover shadow-md ring-1 ring-gray-200"
+                    loading="lazy"
+                />
+            </div>
+
         </section>
 
         <!-- About Me Section -->
